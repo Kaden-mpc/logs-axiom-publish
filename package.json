@@ -1,0 +1,32 @@
+{
+  "name": "logs-axiom-publish",
+  "version": "1.0.0",
+  "description": "Publish logs to Axiom",
+  "main": "app.js",
+  "dependencies": {
+    "@axiomhq/js": "^1.0.0-rc.1",
+    "pmx": "beta",
+    "tail": "^2.2.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kaden-mpc/logs-axiom-publish.git"
+  },
+  "config": {
+    "axiom_token": "YOUR_AXIOM_TOKEN",
+    "axiom_org": "YOUR_AXIOM_ORG",
+    "axiom_dataset": "YOUR_AXIOM_DATASET",
+    "out": "path/to/your/log/file.log",
+    "err": "path/to/your/error/log/file.log",
+    "interval": 60000
+  },
+  "apps": [
+    {
+      "merge_logs": true,
+      "max_memory_restart": "200M",
+      "script": "app.js"
+    }
+  ],
+  "author": "MPConsulting, LLC",
+  "license": "MIT"
+}
