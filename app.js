@@ -120,7 +120,8 @@ try {
       const timeOfChange = new Date().toISOString();
       const log = {
         _time: timeOfChange,
-        data: { log: data, type: 'log' },
+        type: 'log',
+        data: { log: data, error: false },
       };
       axiomClient.ingest(dataset, log);
     });
@@ -130,7 +131,8 @@ try {
       const timeOfChange = new Date().toISOString();
       const log = {
         _time: timeOfChange,
-        data: { log: data, type: 'error' },
+        type: 'log',
+        data: { log: data, error: true },
       };
       axiomClient.ingest(dataset, log);
     });
