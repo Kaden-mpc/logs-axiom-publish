@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kaden-mpc/logs-axiom-publish.git"
+    "url": "https://github.com/Kaden-mpc/logs-axiom-publish"
   },
   "config": {
     "axiom_token": "YOUR_AXIOM_TOKEN",
