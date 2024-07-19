@@ -4,7 +4,7 @@
   "description": "Publish logs to Axiom",
   "main": "app.js",
   "dependencies": {
-    "@axiomhq/js": "^1.0.0-rc.1",
+    "@axiomhq/js": "^1.1.0",
     "pmx": "beta",
     "tail": "^2.2.6"
   },

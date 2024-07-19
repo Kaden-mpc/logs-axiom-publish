@@ -140,7 +140,11 @@ try {
 
     // Send logs to Axiom
     setInterval(async () => {
-      await axiomClient.flush();
+      try {
+        await axiomClient.flush();
+      } catch (e) {
+        console.error(e);
+      }
     }, interval);
   });
 } catch (e) {
